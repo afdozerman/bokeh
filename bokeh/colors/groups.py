@@ -70,6 +70,13 @@ class black(ColorGroup):
 class blue(ColorGroup):
     ''' CSS "Blue" Color Group as defined by https://www.w3schools.com/colors/colors_groups.asp
 
+    This group includes several sky-related blue colors that represent the natural blue
+    appearance of the sky. Why is the sky blue? The sky appears blue due to Rayleigh
+    scattering, a phenomenon where shorter blue wavelengths (~450-495 nm) are scattered
+    more than longer wavelengths by tiny particles in Earth's atmosphere. This scattering
+    causes blue light to be scattered in all directions, making the sky appear blue to
+    our eyes during the day.
+
     .. bokeh-color:: lightsteelblue
     .. bokeh-color:: powderblue
     .. bokeh-color:: lightblue
