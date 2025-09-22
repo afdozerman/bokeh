@@ -75,9 +75,9 @@ class _ColorGroupMeta(type):
 
     def __getattr__(self, v):
         from . import named
-        if v is not "_colors" and v in self._colors:
+        if v != "_colors" and v in self._colors:
             return getattr(named, v.lower())
-        return super(_ColorGroupMeta, self).__getattr__(v)
+        raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{v}'")
 
 #-----------------------------------------------------------------------------
 # Dev API
